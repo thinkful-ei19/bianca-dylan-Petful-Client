@@ -18,11 +18,6 @@ export const ADOPT_DOG_REQUEST = 'ADOPT_DOG_REQUEST';
 export const adoptDogRequest = () => ({
     type: ADOPT_DOG_REQUEST
 })
-export const ADOPT_DOG_SUCCESS = 'ADOPT_DOG_SUCCESS';
-export const adoptDogSuccess = dog => ({
-    type: ADOPT_DOG_SUCCESS,
-    dog
-})
 export const ADOPT_DOG_ERROR = 'ADOPT_DOG_ERROR';
 export const adoptDogError = error => ({
     type: ADOPT_DOG_ERROR,

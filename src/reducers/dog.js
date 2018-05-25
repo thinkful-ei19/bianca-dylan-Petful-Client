@@ -1,4 +1,4 @@
-import {FETCH_DOG_REQUEST, FETCH_DOG_SUCCESS, FETCH_DOG_ERROR, ADOPT_DOG_REQUEST, ADOPT_DOG_SUCCESS, ADOPT_DOG_ERROR} from '../actions';
+import {FETCH_DOG_REQUEST, FETCH_DOG_SUCCESS, FETCH_DOG_ERROR, ADOPT_DOG_REQUEST, ADOPT_DOG_ERROR} from '../actions';
 
 const initialState = {
     data: {
@@ -13,7 +13,7 @@ const initialState = {
     error: null,
     loading: false
 }
-export default (state = initialState, action)=> {
+export function dogReducer(state = initialState, action) {
     if(action.type === FETCH_DOG_REQUEST){
         return Object.assign({}, state, {
             loading: true
@@ -34,17 +34,12 @@ export default (state = initialState, action)=> {
             loading: true
         })
     }
-    if(action.type === ADOPT_DOG_SUCCESS){
-        return Object.assign({}, state, {
-            data: action.data
-        })
-    }
     if(action.type === ADOPT_DOG_ERROR){
         return Object.assign({}, state, {
             error: action.error
         })
     }
-    console.log(state);
-    return initialState;
+   
+    return state;
 
 }
