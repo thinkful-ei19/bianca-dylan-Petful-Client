@@ -3,8 +3,8 @@ import { catReducer } from './cat';
 import { dogReducer } from './dog';
 
 const reducers = {
-  catReducer,
-  dogReducer
+  catToAdopt: catReducer,
+  dogToAdopt: dogReducer
 };
 
 export const reducer = combineReducers(reducers);
