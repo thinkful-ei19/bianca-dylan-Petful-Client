@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Dashboard from './Dashboard';
+import { store } from './store';
 import registerServiceWorker from './registerServiceWorker';
 
 const catData = {
@@ -23,6 +24,8 @@ const dogData = {
   breed: 'Golden Retriever',
   story: 'Owner Passed away'
 };
+
+store.getState();
 
 ReactDOM.render(<Dashboard catToAdopt={catData} dogToAdopt={dogData} />, document.getElementById('root'));
 registerServiceWorker();

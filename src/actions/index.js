@@ -1,3 +1,3 @@
-import { fetchCat, fetchCatRequest, fetchCatSuccess, fetchCatError, adoptCat, adoptCatRequest, adoptCatSuccess, adoptCatError } from './cat';
+import { FETCH_CAT_REQUEST, FETCH_CAT_SUCCESS, FETCH_CAT_ERROR, ADOPT_CAT_REQUEST, ADOPT_CAT_ERROR } from './cat';
 
-export { fetchCat, fetchCatRequest, fetchCatSuccess, fetchCatError, adoptCat, adoptCatRequest, adoptCatSuccess, adoptCatError };
+export { FETCH_CAT_REQUEST, FETCH_CAT_SUCCESS, FETCH_CAT_ERROR, ADOPT_CAT_REQUEST, ADOPT_CAT_ERROR };
