@@ -19,7 +19,7 @@ export const fetchCatError = error => ({
 
 export const fetchCat = () => dispatch => {
   dispatch(fetchCatRequest());
-  return fetch('http://localhost:8080/cat', {
+  return fetch(`${API_BASE_URL}/cat`, {
     method: 'GET'
   })
     .then(res => {
